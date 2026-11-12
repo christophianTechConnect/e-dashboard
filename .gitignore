@@ -1,0 +1,16 @@
+# Virtual environment (install with: pip install -r requirements.txt)
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

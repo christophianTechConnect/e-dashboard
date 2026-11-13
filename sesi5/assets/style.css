@@ -1,0 +1,60 @@
+/* sesi5/assets/style.css — Latihan mandiri Sesi 5 no. 4
+   Dash otomatis memuat semua file .css di folder assets/ yang sejajar dengan aplikasi.
+   Hanya selector class yang dipakai, sehingga app_halo.py dan app_dash_dasar.py
+   (yang berada di folder yang sama) tidak ikut berubah tampilannya. */
+
+.halaman {
+    font-family: Arial, sans-serif;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    color: #1f2328;
+}
+
+.subjudul {
+    color: #555;
+    margin-top: 0;
+}
+
+/* Baris KPI cards: flexbox */
+.kartu-baris {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.kartu {
+    flex: 1;
+    min-width: 160px;
+    padding: 16px;
+    border-radius: 10px;
+    background: #F4F6FA;
+    text-align: center;
+}
+
+.kartu-judul {
+    margin: 0;
+    color: #555;
+}
+
+.kartu-nilai {
+    margin: 4px 0 0 0;
+}
+
+/* Dua grafik berdampingan: CSS grid */
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+/* Di layar sempit, grafik ditumpuk */
+@media (max-width: 800px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sumber {
+    color: #777;
+}

@@ -1,0 +1,9 @@
+# Library minimum untuk hosting dashboard Dash (sesi8/app_final_dashboard.py) di PythonAnywhere.
+# Sengaja tanpa streamlit/pyarrow/matplotlib agar muat di kuota 512 MB akun gratis.
+# Pasang dengan: pip install --no-cache-dir -r requirements-pythonanywhere.txt
+dash>=2.17
+plotly>=5.22
+pandas>=2.2
+numpy>=1.26
+scikit-learn==1.9.1   # harus sama dengan versi saat model disimpan (models/model_metadata.json)
+joblib>=1.4
